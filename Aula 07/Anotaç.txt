@@ -1,0 +1,21 @@
+operadores:
+
+-Aritmeticos
+ - 
+ +
+ *
+ / - divisão real
+ % - resto da divisão inteira
+ ** - potência
+
+-Atribuição
+ var para guardar um valor, = significa recebe
+auto atribuição var c = 3, c = c + 4 ou c += 4, c = c - 4 ou c -= 4e assim vai.... 
+
+-Incremento 
+x++ somar mais um
+x-- diminuir um 
+
+-Relacionais
+
+-logicos

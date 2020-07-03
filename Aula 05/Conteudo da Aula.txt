@@ -1,0 +1,17 @@
+// ou /**/ são exemplos de com fazer comentarios
+   
+use var ou let para declarar um espaço a ser preenchido 
+    
+ 
+Tipos Primitivos em JavaScript:
+  - number = 12, -5 ou 0.09
+  - string = 'Google', "pastel" ou `ameixa`
+  - boolean = True ou False
+  - null
+  - undefined
+  - object
+    +Array
+  - function   
+
+Comando typeof server para verificar qual o  tipo da variavel
+    

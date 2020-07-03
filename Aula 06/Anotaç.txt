@@ -1,0 +1,14 @@
+Templete string - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/template_strings
+
+Formatando String
+
+	-S.lenght - contar quantos caracteres
+	-toUpperCase() - deixar tudo grande
+	-toLowerCase() - deixar tudo pequeno
+
+  	-document.write - mostrar no body
+
+Formatar Numeros
+
+	- to.Fixed(2) - casas decimais
+	- Moeda- n1 .toLocalString('pt-BR', {style: 'currency', currency: 'BRL'})
