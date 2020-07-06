@@ -5,3 +5,31 @@ Operadores Relacionais
     <= - Menor Igual
     == - Igualdade
     != - Diferente
+Testes
+    preco >= 200.5   //o preço é maior ou igual a 200.50
+    idade < 18       //a idade é menor que 18 anos
+    curso == "javascript"  //curso é javascrript
+    n1 != n2
+Identidade
+    5 == '5' --> true //mesmo valor
+    5 === '5' -- false //eles não são identicos tipos Diferente
+
+ Operadores Logicos 
+ Ordem das operações
+  1º  ! negação é a não
+  2º  && conjunção é o E
+  3º  || disjunção é o ou
+
+  Exemplos
+  idade >= 15 && idade<=17           //Idade está entre 15 e 17
+  estado == 'rj' || estado == 'sp'   //o estado é RJ ou SP
+  slario > 1500 && sexo != "m"      //O salario é acima de 1500 e não é homem
+
+  Precedencia
+   | Relacionais
+   | !
+   | &&
+   V ||
+
+   Ternario
+    Teste? True : False
