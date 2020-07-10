@@ -33,3 +33,5 @@ Identidade
 
    Ternario
     Teste? True : False
+    Exemplo:
+        media>= 7 ? Aprovado : False

@@ -1,0 +1,29 @@
+Dom - Document Object Model
+
+Arvore DOM do Site - Esta dentro da window, 
+dentro dela tem a location, document e history
+
+window.document.write(window.document.URL) //Escrever algo na tela
+
+InnerText - mandar escrever
+
+Selecionando elementos da arvore DOM:
+-Marca: getElementByTagName();
+document.getElementsByTagName('p')[0] Selecionando uma tag no
+caso o primeiro paragrafo
+
+-ID: getElementById
+ var d = document.getElementById('msg')
+        d.style.background = 'green'
+
+-Nome:getElementsByName
+var e = document.getElementsByName('msge')[0]
+        e.innerText = 'Somente manda Escrever'
+
+-Classe:getElementByClassName
+var f = document.getElementsByClassName('class')[0]
+        f.style.background = 'red'
+
+-Seletor
+ var d = document.querySelector('div#msg')
+        d.style.background = 'blue'
