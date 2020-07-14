@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Valores</title>
+    <style>
+        input{
+            font: normal 18pt Arial;
+        }
+        body{
+            font: normal 20pt Arial;
+        }
+        div#resultado{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>    
+    <input type="number" name="txt01" id="txt1">+
+    <input type="number" name="txt02" id="txt2">   
+    <div id="resultado">Resultado</div>
+    <input type="button" value="Somar" onclick="somar()">
+    <script>
+        function somar(){
+            var tn1 = window.document.getElementById('txt1')
+            var tn2 = window.document.querySelector('input#txt2')
+            var resultado = window.document.getElementById('resultado')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            resultado.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>` 
+            //O innerHTML copia para a variavel resultado o valor de s
+        }
+    </script>
+</body>
+</html>

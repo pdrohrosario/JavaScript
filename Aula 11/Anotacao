@@ -1,0 +1,14 @@
+Condições:
+
+- nas condiçoes pode-se alterar o Fluxo da informação
+  (desvio condicional) 
+
+Condicional IF:
+    if(condicao){
+        **TRUE**
+    }else{
+        **FALSE**       
+    }
+
+Tipos de Condição:
+

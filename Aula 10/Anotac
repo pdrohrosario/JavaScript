@@ -1,0 +1,69 @@
+Eventos DOM
+são utilizados para notificar o código de novidades
+durante a navegação do usuário. Cada evento é representado
+por um objeto que é baseado na interface Event, e pode ter
+campos customizados adicionados e/ou funções usadas para
+obter informações adicionais sobre o que aconteceu.
+Eventos podem representar desde interações básicas do 
+usuário (cliques, rolagem da página...) até notificações
+automáticas de novidades no DOM. 
+https://developer.mozilla.org/pt-BR/docs/Web/Events
+
+Function - serão acionadas pelos eventos
+1- Exemplo - 
+    function acao (parametro){ 
+    }
+
+    <div id="area" onclick="acionar()">
+        Interaja...
+    </div>
+    <script>
+        function acionar(){
+            var a = document.getElementById('area')
+            a.innerText = 'Clicou'
+        }
+    </script>
+
+2- Exemplo - Multipla Chamada
+
+<div id="area2" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja...
+    </div>
+    <script>
+        function acionar(){
+            var a = document.getElementById('area')
+            a.innerText = 'Clicou'
+            a.style.background = 'red'
+        }
+        var b = document.getElementById('area2')
+        function entrar(){
+            b.innerText = 'Entrou'
+        }
+        function clicar(){
+            b.innerText = 'Clicou'
+        }
+        function sair(){
+            b.innerText = 'Saiu'
+        }
+    </script>
+    2.1 - Exemplo Organizado
+    <div id="area2">
+        Interaja...
+    </div>
+    <script>
+        
+        var b = document.getElementById('area2')
+        b.addEventListener('click', clicar)        
+        b.addEventListener('mouseenter', entrar)
+        b.addEventListener('mouseout', sair)
+
+        function entrar(){
+            b.innerText = 'Entrou'
+        }
+        function clicar(){
+            b.innerText = 'Clicou'
+        }
+        function sair(){
+            b.innerText = 'Saiu'
+        }
+    </script>
